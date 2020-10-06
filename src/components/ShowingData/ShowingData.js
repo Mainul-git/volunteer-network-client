@@ -74,14 +74,14 @@ const ShowingData= () => {
     // const s=use.find(reg=>reg.id==registered.id)
 const[user,setUser]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:9000/getVolunteerInfo?email='+loggedInUser.email)
+        fetch('https://limitless-sands-81610.herokuapp.com/getVolunteerInfo?email='+loggedInUser.email)
         .then(res=>res.json())
         .then(data=>setUser(data))
     },[load])
 
 
     const handleDelete=(id)=>{
-        fetch(`http://localhost:9000/deleteItem/${id}`,{
+        fetch(`https://limitless-sands-81610.herokuapp.com/deleteItem/${id}`,{
             method:'DELETE'
     
     

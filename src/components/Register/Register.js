@@ -74,7 +74,7 @@ const Register = () => {
     const{id}=useParams()
     
     // useEffect(()=>{
-    //     fetch('http://localhost:9000/getVolunteer?id'+id)
+    //     fetch('https://limitless-sands-81610.herokuapp.com/getVolunteer?id'+id)
     //    .then(res=>res.json())
     //    .then(data=>setVolunteerDouble(data))
     //    },[])
@@ -121,7 +121,7 @@ const handleBlur=(e)=>{
 const handleAddTask=(e)=>{
     
 
-        fetch('http://localhost:9000/addVolunteer',{
+        fetch('https://limitless-sands-81610.herokuapp.com/addVolunteer',{
             method:'POST',
             headers:{'Content-TYPE':'application/json'},
             body:JSON.stringify(detail)

@@ -73,7 +73,7 @@ const[volunteer,setVolunteer]=useContext(VolunteerContext)
 console.log(volunteer)
 
 useEffect(()=>{
- fetch('http://localhost:9000/getVolunteer')
+ fetch('https://limitless-sands-81610.herokuapp.com/getVolunteer')
 .then(res=>res.json())
 .then(data=>setVolunteer(data))
 },[])
