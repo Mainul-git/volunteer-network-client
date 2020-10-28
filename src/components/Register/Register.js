@@ -69,7 +69,9 @@ import tree from '../../logos/Group 1329.png'
 const Register = () => {
     const[volunteer,setVolunteer]=useContext(VolunteerContext)
     const[loggedInUser,setLoggedInUser]=useContext(UserContext)
+    
     const history=useHistory()
+
 
     const{id}=useParams()
     
@@ -130,15 +132,18 @@ const handleAddTask=(e)=>{
         })
         .then(res=>res.json())
         .then(data=>{
+            if(data){
+             
+      history.push('/showData')   
+            }
+        
             
-            console.log(data)
         
         }
       )
     
         
     
-      history.push('/showData')
         
     e.preventDefault()
     

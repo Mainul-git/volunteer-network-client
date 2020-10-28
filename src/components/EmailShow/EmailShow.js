@@ -9,7 +9,7 @@ const EmailShow = () => {
         fetch('https://limitless-sands-81610.herokuapp.com/getVolunteerInfos')
        .then(res=>res.json())
        .then(data=>setAdmin(data))
-       },[])
+       },[loaded])
 
        const handleDelete=(id)=>{
         fetch(`https://limitless-sands-81610.herokuapp.com/deleteItem/${id}`,{
@@ -19,9 +19,12 @@ const EmailShow = () => {
         })
         .then(res=>res.json())
         .then(data=>{
+            if(data){
+                setLoaded(!loaded)
+                
+            }
             
-            console.log(data)
-            setLoaded(!loaded)
+           
         
         } )
       }
