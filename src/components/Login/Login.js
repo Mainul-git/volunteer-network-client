@@ -25,6 +25,7 @@ const Login = () => {
             const signedInUser = {name: displayName, email} 
             setLoggedInUser(signedInUser)
             history.replace(from);
+            sessionStorage.setItem('email',signedInUser.email)
             // ...
           }).catch(function(error) {
             const errorMessage = error.message;
@@ -32,10 +33,10 @@ const Login = () => {
           });
     }
     return (
-        <div>
+        <div className="flex-column align-items-center m-auto">
         <img src={tree} style={{height:'100px'}}/>
   
-      <p className="login"onClick={handleSignIn}><span><img src="https://img.icons8.com/color/48/000000/google-logo.png"/></span>Continue With Google </p>} 
+      <p className="login m-auto"onClick={handleSignIn}><span><img src="https://img.icons8.com/color/48/000000/google-logo.png"/></span>Continue With Google </p> 
         </div>
     );
 };

@@ -1,19 +1,40 @@
- .login {
+  .login {
    padding:15px;
    width:320px;
    height:60px;
    border-radius:120px;
    border: 1px solid grey;
    cursor: pointer;
-   margin-left: 500px;
+   /* margin-left: 500px; */
    margin-bottom: -15px;
 
 
- }
+ } 
  .login img{
    width:40px;
  }
  .login:hover{
    /* background-color:#ff44a2; */
    background-color: sandybrown;
+ }
+ @media(min-width:576px){
+  /* .login {
+    padding:15px;
+    
+    height:60px;
+    border-radius:120px;
+    border: 1px solid grey;
+    cursor: pointer;
+  
+    margin-bottom: -15px;
+ 
+ 
+  } */
+  .login img{
+    width:40px;
+  }
+  .login:hover{
+    /* background-color:#ff44a2; */
+    background-color: sandybrown;
+  }
  }

@@ -1,0 +1,32 @@
+.sidebar{
+    background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+    position: fixed;
+}
+.sidebar li{
+    margin-bottom: 2em;
+}
+.sidebar li:hover {
+    /* display: inline-block;
+    transform: translate(5px); */
+    cursor: pointer;
+}
+.sidebar {
+    margin-right: 5px;
+}
+@media(min-width:576px){
+    .sidebar{
+        background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+        position: fixed;
+    }
+    .sidebar li{
+        margin-bottom: 2em;
+    }
+    .sidebar li:hover {
+        /* display: inline-block;
+        transform: translate(5px); */
+        cursor: pointer;
+    }
+    .sidebar {
+        margin-right: 5px;
+    }
+}

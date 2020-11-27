@@ -13,6 +13,7 @@ import Register from './components/Register/Register';
 import ShowingData from './components/ShowingData/ShowingData';
 import EmailShow from './components/EmailShow/EmailShow';
 import NoMatch from './components/NoMatch/NoMatch';
+import Donation from './components/Donation/Donation';
 
 
 export const UserContext = createContext();
@@ -28,6 +29,7 @@ const [volunteer,setVolunteer]=useState([])
   <Switch>
     
     <Route  exact path="/home">
+      
       <Home></Home>
 
     </Route>
@@ -38,14 +40,18 @@ const [volunteer,setVolunteer]=useState([])
       <Register></Register>
 
     </PrivateRoute>
+    <PrivateRoute path="/donation">
+      <Donation></Donation>
+
+    </PrivateRoute>
     <Route path="/showData">
       <ShowingData></ShowingData>
 
 
     </Route>
-    <Route path="/emailShow">
+    <PrivateRoute path="/emailShow">
       <EmailShow></EmailShow>
-    </Route>
+    </PrivateRoute>
     
     <Route path="/">
       <Home></Home>
@@ -61,3 +67,4 @@ const [volunteer,setVolunteer]=useState([])
 }
 
 export default App;
+ 

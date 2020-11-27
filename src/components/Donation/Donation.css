@@ -1,0 +1,62 @@
+/* .donation-background{
+    background-image: linear-gradient(90deg, #19d3ae,#0fcfec);
+    height:100vh;
+}
+.submit-button{
+    
+    border:none;
+    width:400px;
+    border-radius: 10px
+    ;
+    padding:5px;
+    margin-top: 15px;
+  }
+  .form-control{
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  .form-container{
+    width: 480px;
+    height:420px;
+box-sizing: border-box;
+padding: 40px 50px 40px 40px ;
+margin-top:20px;
+box-shadow: 3px solid #727272;
+background-color:white;
+border: 1px solid grey;
+margin:50px auto ;
+position:relative;
+ } */
+ @media(min-width:576px){
+  .donation-background{
+    background-image: linear-gradient(90deg, #19d3ae,#0fcfec);
+    height:625px;
+    background-image: 100%;
+
+}
+.submit-button{
+    
+    border:none;
+    width:400px;
+    border-radius: 10px
+    ;
+    padding:5px;
+    margin-top: 15px;
+  }
+  .form-control{
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  .form-container{
+    width: 480px;
+    height:420px;
+box-sizing: border-box;
+padding: 40px 50px 40px 40px ;
+margin-top:20px;
+box-shadow: 3px solid #727272;
+background-color:white;
+border: 1px solid grey;
+margin:50px auto ;
+position:relative;
+ }
+ }

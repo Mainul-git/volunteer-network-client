@@ -6,12 +6,16 @@ const Showitem = ({datas,handleDelete}) => {
  
 
     return (
-        <div>
+        <div className="col-md-6 bg-light">
             
-            <img src={datas.image} style={{height:'200px'}} alt=""/>
-            <h1>{datas.data}</h1>
+          <div className="row"></div> <div className='col-md-6'> <img src={datas.image} style={{height:'200px'}} alt=""/></div>
+          <div className='col-md-6'>
+          <h1>{datas.data}</h1>
     <p>Date:{datas.date}</p>
-    <button className= "btn btn-primary"onClick={()=>handleDelete(datas._id)}>delete</button>
+    <button className= "btn btn-primary m-auto"onClick={()=>handleDelete(datas._id)}>delete</button>
+          </div>
+ 
+   
         </div>
     );
 };
