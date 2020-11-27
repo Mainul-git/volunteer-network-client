@@ -48,7 +48,7 @@ const[logging,setLogging]=useState(false)
        </Link>
        {sessionStorage.length == 0 ?  <li class="nav-item mr-2">
         <button className="btn btn-success" onClick={logIn}>Sign In</button></li>: <li  class="nav-item  mr-2 " >
-<button onClick={logOut}  id="logOut" class=" btn  btn-danger " href="#">Log Out</button>
+<button onClick={logOut}  id="logOut" class=" btn  btn-danger " href="#">Sign Out</button>
 </li> }
       
       

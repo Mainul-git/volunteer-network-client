@@ -1,0 +1,18 @@
+@media(min-width:576px){
+    #table{
+        table-layout: auto !important;
+        position:fixed !important;
+        
+    }
+    .table-container{
+display:"block"
+    }
+    .table-sidebar-container{
+        
+        overflow: hidden;
+        display:flex;
+        width:100wh;
+        
+    }
+
+}

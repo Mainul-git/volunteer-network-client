@@ -22,11 +22,12 @@ const Sidebar = () => {
       }, []);
 
     return (
-        <div  className="sidebar d-flex flex-column justify-content-start  py-5 px-4" style={{height:"100vh"}}>
+        <div   className="sidebar d-flex flex-column justify-content-between col-2 py-5 px-4" style={{height:"100vh"}}>
             <ul className="list-unstyled">
              {
-                admin === true ? <div> <li>Volunteer RegisterList</li>
-                   <li>Add Event</li>
+                admin === true ? <div> 
+                  <li>Volunteer RegisterList</li>
+              
                    </div>
                    :' '
                } 
